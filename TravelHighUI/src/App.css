@@ -1,0 +1,129 @@
+button:disabled {
+    cursor: not-allowed;
+}
+.custom-card{
+    width: 100% !important;
+}
+.text-custom{
+    color: rgb(165, 165, 165);
+}
+.bg-card{
+    background-color: #000000c9 !important;
+}
+.bg-custom{
+    background-color: #000000a1;
+}
+.text-danger{
+    font-weight: bold;
+    color: rgb(255, 94, 0);
+}
+.adminActions {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+}
+
+.adminButton {
+    height: 70px;
+    width: 70px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.adminButton i {
+    font-size: 22px;
+}
+
+.adminButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 120%;
+    text-align: center;
+}
+
+.adminButtons a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 10px auto 0;
+    line-height: 1.15;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
+}
+
+.adminButtons a:hover {
+    transform: scale(1.05);
+}
+
+.adminButtons a:nth-child(1) {
+    background-color: #e7da26;
+    transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;
+}
+
+.adminButtons a:nth-child(2) {
+    background-color: #0df06cb9;
+    transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;
+}
+
+.adminActions a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adminActions a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adminToggle {
+    -webkit-appearance: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:hover {
+    box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:checked~.adminButtons a {
+    opacity: 1;
+    visibility: visible;
+}
+
+#alert {
+    position: fixed;
+    top: 40px;
+    right: 40%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.cen {
+    vertical-align: middle !important;
+}
