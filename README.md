@@ -1,6 +1,6 @@
 # TravelHigh
 
-TravelHigh is a Flight ticket booking application developed using MERN Stack (MongoDB, Express js, React js, Node js)
+TravelHigh is a flight ticket booking application developed using MERN Stack (MongoDB, Express js, React js, Node js)
 
 
 https://user-images.githubusercontent.com/85893398/124464783-3e0eb300-ddb2-11eb-902a-5acdc5f7fd78.mp4
