@@ -1,0 +1,23 @@
+
+
+body {
+    background-image: url("./img-travel.jpg") ;
+}
+
+.Container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#button1 {
+    width: 300px;
+    height: 40px;
+}
+
+#button2 {
+    width: 300px;
+    height: 40px;
+}
