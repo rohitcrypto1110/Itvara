@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CreateBooking from './CreateBooking';
 import "../App.css";
 import GetFlights from './GetFlights';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
 export default class FlightDetails extends Component {
     constructor(props) {
@@ -35,6 +36,30 @@ export default class FlightDetails extends Component {
         } else {
             return (
                 <React.Fragment>
+                <div>
+
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <span className="navbar-brand font-weight-bolder"><img alt="navbar brand logo" src="assets/logo.png" height="30vw" width="30vw" className="mr-2"/> Fly High</span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item mr-2">
+                <Link className="nav-link font-weight-bold" to="/bookFlight">
+                  Book Flight
+                </Link>
+              </li>
+              <li className="nav-item mr-2">
+                <Link className="nav-link font-weight-bold" to="/viewBooking">
+                  View Booking Details
+                </Link>
+              </li>
+            </ul>
+            </div>
+          </nav>
+
+
                     <div className="container mt-5">
                         <div className="row">
                             <div className="card custom-card bg-card text-light">
@@ -91,6 +116,7 @@ export default class FlightDetails extends Component {
                             })
                             }
                         </div>
+                    </div>
                     </div>
                 </React.Fragment>
             )
