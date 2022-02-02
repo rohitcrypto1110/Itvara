@@ -21,3 +21,15 @@ body {
     width: 300px;
     height: 40px;
 }
+
+p {
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size: 25px;
+ color: #039;
+ background-color: #FCEBB6;
+}
+.same {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

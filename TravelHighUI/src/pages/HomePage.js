@@ -6,14 +6,6 @@ import { BrowserRouter as Router, useHistory, Switch, Link, Redirect } from "rea
 
 export default function HomePage(props){
 
-    // const history = useHistory();
-
-    // const handleJourney = () => {
-    //     let path = `http://localhost:3006/bookFlight`;
-    //     history.push(path);
-    // }
-
-
     return(
         <React.Fragment>
         <div>
@@ -41,6 +33,14 @@ export default function HomePage(props){
           </nav>
 
             {/* <CardMedia component="iframe" src="./video.mp4" allow="autoPlay" /> */}
+
+            <div className="same">
+                <p>
+                    Click on "Plan Your Journey with Strangers" to go on a journey with total strangers from differnet places , 
+                    with preferences of your type, with the same likes and dislikes,
+                     and create a memory for lifetime!
+                </p>
+            </div>
 
 
             <div className="Container">
