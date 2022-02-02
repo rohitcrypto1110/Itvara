@@ -30,6 +30,9 @@ class SignUpForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    
+    let path = `/HomePage`;
+    this.props.history.push(path);
 
     console.log("The form was submitted with the following data:");
     console.log(this.state);
